@@ -1,6 +1,12 @@
 package practicoRepaso;
 
+//Hola
+
 public class Main {
+
+	public static void doSomething(){
+		System.out.println("I do something");
+	}
 
 	public static void main(String[] args) {
 		//listarRec(10);
@@ -8,7 +14,7 @@ public class Main {
 		System.out.println(minRec(n,0,3));
 	}
 
-	
+
 	public static void listarRec(int n){
 		if(n==1){
 			System.out.println(n);
@@ -18,7 +24,7 @@ public class Main {
 			System.out.println(n);
 		}
 	}
-	
+
 	public static int factorialRec(int n){
 		if(n==0 || n==1){
 			return n;
@@ -27,8 +33,8 @@ public class Main {
 			return n*factorialRec(n-1);
 		}
 	}
-	
-	
+
+
 	public static int minRec(int[] n, int a, int b){
 		if(a==b){
 			return n[a];
@@ -36,12 +42,12 @@ public class Main {
 		else{
 			int minIzq=minRec(n,a,(a+b)/2);
 			int minDer=minRec(n,(a+b)/2+1,b);
-			if(minIzq<minDer) 
-				return minIzq; 
+			if(minIzq<minDer)
+				return minIzq;
 			else
 				return minDer;
 		}
 	}
-	
-	
+
+
 }
