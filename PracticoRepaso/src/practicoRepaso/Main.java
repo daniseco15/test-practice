@@ -5,7 +5,7 @@ package practicoRepaso;
 public class Main {
 
 	public static void doSomething(){
-		System.out.println("I do something");
+		System.out.println("I do something else");
 	}
 
 	public static void main(String[] args) {
